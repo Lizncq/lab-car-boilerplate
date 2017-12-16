@@ -5,14 +5,18 @@
   margin: 0;
 }
 /*estilos nav*/
-.nav-pad{
+.nav-padd{
     padding-top: 2em;
 }
 a {
-  color: #000;
+  color: #000000;
 }
 
+/*box "registrate" y "conviertete en conductor"*/
 .home {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 100%;
   height: 40em;
   background-image: url('../assets/images/taxi.jpg');
@@ -20,22 +24,51 @@ a {
   background-size: cover;
   background-position: bottom;
 }
-.aside {
+.box-yellow {
   height: 22em;
-  margin-top: 8em;
-  padding-right: 0;
   background-color: #FFBF00;
-  text-indent: 1em;
-  padding: 1em;
+  /*text-indent: 1em;*/
+  padding: 2em;
   font-weight: 400;
 }
 h2 {
-  line-height: .5em;
+  line-height: .3em;
   color: #ffffff;
 }
-.logo-blanco {
+img[alt="logo-blanco"] {
+  width: 5em;
+  padding-left: .5em;
+}
+.btn-color-b {
+  background-color: #000000;
+  border: none;
+}
+.btn-color-w {
+  background-color: #F2F2F2;
+  border: none;
+  color: #000000;
+}
+.btn:hover {
+  background-color: #424242;
+}
+.text {
+  text-align: center;
+  padding-top: .5em;
+}
+.input-marg {
+  margin-bottom: .5em;
+}
+#good::before, #good::after {
+  content: " ";
   display: inline-block;
-  width: 9em;
-  height: 2em;
-  background-image: url('../assets/images/logoBlanco.png');
+  width: 10em;
+  height: .1em;
+  background: white;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1.5em;
+  border-radius: .5em;
+}
+@media (max-width:768px){
+
 }
