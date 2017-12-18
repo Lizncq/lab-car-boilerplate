@@ -24,138 +24,265 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <img class="logo"src="assets/images/logoForma.png">
+                <a href="#"><img class="logo"src="assets/images/logoForma.png"></a>
               </div>
               <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="#">Viaja</a></li> <!--class="active"-->
-                  <li><a href="#about">Conduce</a></li>
-                  <li><a href="#contact">Inicia sesión</a></li>
+                  <li><a href="#">Conduce</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#buttonSesion" >Inicia sesión</a></li>
                 </ul>
+              </div>
+              <!--modal inicia sesion-->
+              <div id="buttonSesion" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="gridSystemModalLabel">Inicia sesión</h4>
+                    </div>
+                    <div>
+                      <img src="assets/images/user.jpg" alt="user">
+                    </div>
+                    <form>
+                    <div class="modal-footer">
+                      <div class="input-group marg-bottom col-xs-6 col-md-6 col-md-offset-3">
+                        <span class="input-group-addon" id="sizing-addon2"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+                        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+                      </div>
+                      <div class="input-group marg-bottom col-xs-6 col-md-6 col-md-offset-3">
+                        <span class="input-group-addon" id="sizing-addon2"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+                        <input type="text" class="form-control" placeholder="Password" aria-describedby="sizing-addon2">
+                      </div>
+                      <p>Forgot password?<a href="#">click here</a></p>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">LOGING</button>
+                    </div>
+                    <form>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- fin modal -->
               </div>
             </div>
           </div>
-        </div>
-      </nav>
-      <!--section-->
-      <section>
-        <div class="container">
-          <div class="row two columns">
-            <div class="col-xs-12 col-md-12">
-              <div class="home pagina principal">
-                <!--box "registrate" y "conviertete en conductor"-->
-                <div class="col-xs-9 col-md-5 col-xs-offset-3 col-md-offset-7">
-                  <div class="box-yellow">
-                    <h2>Disfruta del viaje</h2>
-                    <h2>Eres dueño de tu tiempo</h2><br>
-                    <h4>Viaja con <img src="assets/images/logoBlanco.png" alt="logo-blanco"></h4>
-                    <!-- Button registrate modal -->
-                    <button type="button" class="btn btn-color-w btn-primary" data-toggle="modal" data-target="#buttonRegistrate">Registrate</button><br>
-                    <!-- modal registrate-->
-                    <div class="modal fade" id="buttonRegistrate" tabindex="-1" role="dialog" aria-labelledby="buttonRegistrateLabel">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="buttonRegistrateLabel">Registrate</h4>
-                          </div>
-                          <div class="modal-body">
-                            <form>
-                              <button type="button" class="btn btn-color-b btn-primary btn-lg btn-block">Ya tienes una cuenta?</button>
-                              <p class="text">O CREA UNA CUENTA NUEVA</p>
-                              <div class="row">
-                                <div class="col-xs-6">
-                                  <input type="text" class="form-control input-marg" placeholder="Nombre">
+        </nav>
+        <!--section-->
+        <section>
+          <div class="container">
+            <div class="row two columns">
+              <div class="col-xs-12 col-md-12">
+                <div class="home pagina-principal col-md-12">
+                  <!--box "registrate" y "conviertete en conductor"-->
+                  <div class="col-xs-9 col-md-5 col-xs-offset-3 col-md-offset-7">
+                    <div class="box-yellow">
+                      <h2>Disfruta del viaje</h2>
+                      <h2>Eres dueño de tu tiempo</h2><br>
+                      <h4>Viaja con <img src="assets/images/logoBlanco.png" alt="logo-blanco"></h4>
+                      <!-- Button registrate modal -->
+                      <button type="button" class="btn btn-color-w btn-primary" data-toggle="modal" data-target="#buttonRegistrate">Registrate</button><br>
+                      <!-- modal registrate-->
+                      <div class="modal fade" id="buttonRegistrate" tabindex="-1" role="dialog" aria-labelledby="buttonRegistrateLabel">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="buttonRegistrateLabel">Registrate</h4>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <button type="button" class="btn btn-color-b btn-primary btn-lg btn-block">Ya tienes una cuenta?</button>
+                                <p class="text">O CREA UNA CUENTA NUEVA</p>
+                                <div class="row">
+                                  <div class="col-xs-6">
+                                    <input type="text" class="form-control marg-bottom" placeholder="Nombre">
+                                  </div>
+                                  <div class="col-xs-6">
+                                    <input type="text" class="form-control marg-bottom" placeholder="Apellido">
+                                  </div>
                                 </div>
-                                <div class="col-xs-6">
-                                  <input type="text" class="form-control input-marg" placeholder="Apellido">
-                                </div>
-                              </div>
-                              <input type="text" class="form-control input-marg" placeholder="Correo Electrónico: ejemplo@correo.com">
-                              <input type="text" class="form-control input-marg" placeholder="Teléfono">
-                              <input type="text" class="form-control input-marg" placeholder="Contraseña">
-                              <input type="text" class="form-control input-marg" placeholder="Ciudad">
-                              <input type="text" class="form-control input-marg" placeholder="(Opcional)Código de invitación">
-                              <select class="form-control input-lg input-marg" name="como como ">
-                                <option value="value1"selected>Como te enteraste de nosotros?</option>
-                                <option value="value2">facebook</option>
-                                <option value="value3">radio</option>
-                                <option value="value3">periodico</option>
-                                <option value="value3">por un amigo o familiar</option>
-                              </select>
-                              <button type="button" class="btn btn-default btn-lg btn-block input-marg" disabled="disabled">ENVIAR</button>
-                            </form>
+                                <input type="text" class="form-control marg-bottom" placeholder="Correo Electrónico: ejemplo@correo.com">
+                                <input type="text" class="form-control marg-bottom" placeholder="Teléfono">
+                                <input type="text" class="form-control marg-bottom" placeholder="Contraseña">
+                                <input type="text" class="form-control marg-bottom" placeholder="Ciudad">
+                                <input type="text" class="form-control marg-bottom" placeholder="(Opcional)Código de invitación">
+                                <select class="form-control input-lg marg-bottom" name="como como ">
+                                  <option value="value1"selected>Como te enteraste de nosotros?</option>
+                                  <option value="value2">facebook</option>
+                                  <option value="value3">radio</option>
+                                  <option value="value3">periodico</option>
+                                  <option value="value3">por un amigo o familiar</option>
+                                </select>
+                                <button type="button" class="btn btn-default btn-lg btn-block input-marg" disabled="disabled">ENVIAR</button>
+                              </form>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <p id="good">o bien</p>
-                    <br>
-                    <!-- Button conviertete en conductor modal -->
-                    <button type="button" class="btn btn-color-w btn-primary" data-toggle="modal" data-target="#buttonConductor" data-whatever="@fat">Conviértete en un conductor</button>
-                    <!-- modal conviertete en conductor-->
-                    <div class="modal fade" id="buttonConductor" tabindex="-1" role="dialog" aria-labelledby="buttonConductorLabel">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="buttonConductorLabel">Conviértete en conductor</h4>
-                          </div>
-                          <div class="modal-body">
-                            <form>
-                              <div class="form-group input-marg">
-                                <label for="input">¿Tienes vehículo de 4 puertas?</label>
-                                <select id="input" class="form-control">
-                                  <option>si</option>
-                                  <option>no</option>
-                                </select>
-                              </div>
-                              <div class="form-group input-marg">
-                                <label for="input">Marca</label>
-                                <select id="input" class="form-control">
-                                  <option>elige la marca del vehículo</option>
-                                  <option>ford</option>
-                                  <option>lamborghini</option>
-                                  <option>nissan</option>
-                                  <option>mercedes</option>
-                                  <option>bmw</option>
-                                </select>
-                              </div>
-                              <div class="form-group input-marg">
-                                <label for="input">Modelo</label>
-                                <select id="input" class="form-control">
-                                  <option>modelo 1</option>
-                                  <option>modelo 2</option>
-                                </select>
-                              </div>
-                              <div class="form-group input-marg">
-                                <label for="input">Año</label>
-                                <select id="input" class="form-control">
-                                  <option>año 1</option>
-                                  <option>año 2</option>
-                                </select>
-                              </div>
-                              <div class="form-group input-marg">
-                                <label for="inputHelpBlock">Número de la matrícula</label>
-                                <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" placeholder="Número de la matrícula">
-                                <span id="helpBlock" class="help-block">La información de la matrícula ayuda a los clientes a identificar tu vehículo.</span>
-                              </div>
-                              <button type="button" class="btn btn-default btn-lg btn-block input-marg" disabled="disabled">ENVIAR</button>
-                            </form>
+                      <p id="good">o bien</p>
+                      <br>
+                      <!-- Button conviertete en conductor modal -->
+                      <button type="button" class="btn btn-color-w btn-primary" data-toggle="modal" data-target="#buttonConductor" data-whatever="@fat">Conviértete en un conductor</button>
+                      <!-- modal conviertete en conductor-->
+                      <div class="modal fade" id="buttonConductor" tabindex="-1" role="dialog" aria-labelledby="buttonConductorLabel">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="buttonConductorLabel">Conviértete en conductor</h4>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-group marg-bottom">
+                                  <label for="input">¿Tienes vehículo de 4 puertas?</label>
+                                  <select id="input" class="form-control">
+                                    <option>si</option>
+                                    <option>no</option>
+                                  </select>
+                                </div>
+                                <div class="form-group marg-bottom">
+                                  <label for="input">Marca</label>
+                                  <select id="input" class="form-control">
+                                    <option>elige la marca del vehículo</option>
+                                    <option>ford</option>
+                                    <option>lamborghini</option>
+                                    <option>nissan</option>
+                                    <option>mercedes</option>
+                                    <option>bmw</option>
+                                  </select>
+                                </div>
+                                <div class="form-group marg-bottom">
+                                  <label for="input">Modelo</label>
+                                  <select id="input" class="form-control">
+                                    <option>modelo 1</option>
+                                    <option>modelo 2</option>
+                                  </select>
+                                </div>
+                                <div class="form-group marg-bottom">
+                                  <label for="input">Año</label>
+                                  <select id="input" class="form-control">
+                                    <option>año 1</option>
+                                    <option>año 2</option>
+                                  </select>
+                                </div>
+                                <div class="form-group marg-bottom">
+                                  <label for="inputHelpBlock">Número de la matrícula</label>
+                                  <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock" placeholder="Número de la matrícula">
+                                  <span id="helpBlock" class="help-block">La información de la matrícula ayuda a los clientes a identificar tu vehículo.</span>
+                                </div>
+                                <button type="button" class="btn btn-default btn-lg btn-block input-marg" disabled="disabled">ENVIAR</button>
+                              </form>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      </div> <!-- fin modal-->
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </section>
+      </header>
+      <section>
+       <div class="container">
+         <div class="row">
+           <div class="col-xs-12 col-md-12">
+             <div class="container-text color">
+               <div class="line-white">
+                 <div class="iphone col-xs-12 col-md-4 col-md-offset-1"></div>
+                 <div class="texto col-xs-12 col-md-4">
+                   <h3 class="text-white">Descarga la nueva app</h3>
+                   <p class="text-white">La versión actualizada de labCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+                   <p class="text-white">Con sólo tocar un botón, un auto llega justo a tu ubicación.Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
+     <section>
+       <div class="container">
+         <div class="row">
+           <div class="col-xs-12 col-md-12">
+             <div class="conduce">
+               <div class="col-xs-9 col-xs-offset-1 col-md-offset-6 col-md-6">
+                 <div class="box-gris">
+                   <h2>Conduce cuando quieras</h2>
+                   <p class="text-white">labCar es una opción flexible para alcanzar tus metas financieras</p>
+                   <button type="button" class="yellow btn btn-primary" data-toggle="modal" data-target="#buttonConductor" data-whatever="@fat">Conviértete en un conductor</button>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
+     <section>
+       <div class="container">
+         <div class="row">
+           <div class="col-xs-12 col-md-12">
+             <div class="container-text color">
+               <div class="col-md-5 col-md-offset-1">
+                 <h3 class="text-white">Tarifas</h3>
+                 <h4 class="text-white">Consulta las tarifas labCar aquí</h4>
+                 <div class="input-group marg-bottom col-xs-6 col-md-8">
+                 <span class="input-group-addon" id="sizing-addon2"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></span>
+                 <input type="text" class="form-control" placeholder="Ingrese su punto de partida" aria-describedby="sizing-addon2">
+               </div>
+               <div class="input-group marg-bottom col-xs-6 col-md-8">
+                 <span class="input-group-addon" id="sizing-addon2"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></span>
+                 <input type="text" class="form-control" placeholder="Ingrese su destino" aria-describedby="sizing-addon2">
+               </div>
+               <button type="button" class="btn btn-color-w btn-primary" data-toggle="" data-target="#buttonRegistrate">¡TRAZAR RUTA!</button><br>
+             </div>
+             <div class="maps-container">
+               <img class="maps img-responsive"src="assets/images/maps.jpg" alt="">
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div class="container-text footer-color text-white">
+            <img src="assets/images/logoBlanco.png" alt="">
+            <hr>
+            <div class="col-md-3">
+              <ul class="footer-items">
+                <li>Viaja</li> <!--falta etiqueta anchor*/-->
+                <li>Conduce</li>
+                <li>Ciudades</li>
+                <li>Ciudades</li>
+                <li>Entregas</li>
+                <li>¿Cómo funciona?</li>
+                <li>Países</li>
+                <li>Seguridad</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="footer-items">
+                <li>Oportunidades</li>
+                <li>Nuestra historia</li>
+                <li>API de LabCar</li>
+                <li>Eventos</li>
+                <li>Desarrolladores</li>
+                <li>Servicios</li>
+                <li>Laboratoria</li>
+                <li>Coders</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </section>
-    </header>
-    <!---->
-    <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
-  </body>
-  </html>
+      </div>
+    </div>
+  </footer>
+  <!--enlace jquerys-->
+  <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
+  <!--enlace bootstrap y javascript-->
+  <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
